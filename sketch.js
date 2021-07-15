@@ -10,6 +10,7 @@ function setup() {
   const hHeight = windowHeight * 0.4;
   const wWidth = windowWidth - margin * 2;
   createCanvas(wWidth, hHeight);
+  textSize(height / 32);
   noteSelect = createSelect();
   for (let i = 0; i < Guitar.notes.length; i++){
     noteSelect.option(Guitar.notes[i]);
