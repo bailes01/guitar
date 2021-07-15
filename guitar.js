@@ -30,7 +30,6 @@ class Guitar{
     this.scale = Guitar.getScale(note, scale);
     for (let i = 0; i < this.stringCount; i++){
       var string = [this.tuning[i]];
-      console.log(string)
       var noteIndex = Guitar.notes.indexOf(this.tuning[i]);
       for (let j = 1; j < this.fretCount; j++){
         string.push(Guitar.notes[(j + noteIndex) % Guitar.notes.length]);
