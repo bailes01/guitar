@@ -7,10 +7,12 @@ var tuningSelect;
 var guitar;
 
 function setup() {
-  const hHeight = windowHeight * 0.4;
+  
   const wWidth = windowWidth - margin * 2;
+  const hHeight = wWidth * 0.25;
   createCanvas(wWidth, hHeight);
-  textSize(height / 32);
+  textSize(height / 30);
+  textStyle(BOLD)
   noteSelect = createSelect();
   for (let i = 0; i < Guitar.notes.length; i++){
     noteSelect.option(Guitar.notes[i]);
